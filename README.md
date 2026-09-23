@@ -56,4 +56,8 @@
 ```bash
    npx serve
 ```
+*При ошибке:*
+```bash
+   npx.cmd serve
+```
 3. Откройте адрес с терминала (обычно http://localhost:3000)
