@@ -1,9 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const formatPrice = (num) => {
-        return num.toFixed(2).replace('.',',') + ' ₽';
-    };
-
     const formatBigPrice = (num) => {
         const parts = num.toFixed(2).split('.');
         parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
@@ -22,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    async function renderProduct(data) {
+    function renderProduct(data) {
         document.getElementById('product-image').src = data.image;
         document.getElementById('product-image').alt = data.title;
         document.getElementById('product-category').textContent = data.category;
@@ -52,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             btn.className = `options-btn ${variant.isDefault ? 'active' : ''}`;
             btn.textContent = `${variant.weight} г`;
-            btn.dataset.id = variant.id;
 
             btn.addEventListener('click', () => selectVariant(variant, btn));
 

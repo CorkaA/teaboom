@@ -6,9 +6,7 @@
     --color-text-main: #183b2c;
     --color-text-secondary: #6d7870;
     --color-green-dark: #4f7d59;
-    --color-green-dark-hover: ;
     --color-green-light: #8cb389;
-    --color-green-light-hover: ;
     --font-main: "Manrope", sans-serif;
     --radius-card: 22px;
     --radius-image: 16px;
@@ -169,6 +167,11 @@ button {
     letter-spacing: 0;
     color: var(--color-text-secondary);
     text-decoration: line-through;
+    display: none;
+} 
+
+.product-card_price-block .old-price.visible {
+    display: inline;
 } 
 
 .product-card_price-block .price {
@@ -181,7 +184,7 @@ button {
 
 .offer-block {
     display: flex;
-    align-items: anchor-center;
+    align-items: center;
     gap: 30px;
 }
 
@@ -278,11 +281,11 @@ button {
     }
 
     .note {
-        max-width: revert;
+        max-width: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .product-card {
         flex-direction: column;
     }
@@ -293,7 +296,7 @@ button {
     }
 }
 
-@media (min-width: 540px) and (max-width: 768px) {
+@media (min-width: 540px) and (max-width: 767px) {
     .product-card_image {
         width: 80%;
     }
