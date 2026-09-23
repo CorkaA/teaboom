@@ -18,12 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Данные:', data);
             renderProduct(data);
         } catch (error) {
-            console.error('ошибка', error);
+            console.error('Ошибка', error);
         }
     }
 
     async function renderProduct(data) {
         document.getElementById('product-image').src = data.image;
+        document.getElementById('product-image').alt = data.title;
         document.getElementById('product-category').textContent = data.category;
         document.getElementById('product-title').textContent = data.title;
         document.getElementById('product-briefly').textContent = data.briefly;
