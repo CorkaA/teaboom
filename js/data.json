@@ -10,38 +10,38 @@
         "снижает уровень холестерина",
         "снижает лишний вес"
     ],
-    "image": "images/ananasovyj-ulun.jpg",
+    "image": "images/ananasovij-ulun.jpg",
     "variants": [
         {
             "id": "v1",
             "weight": "100",
             "article": "01306",
-            "price": "326.40",
-            "oldPrice": "349.20",
+            "price": 326.40,
+            "oldPrice": 349.20,
             "isDefault": true
         },
         {
             "id": "v2",
             "weight": "500",
             "article": "01307",
-            "price": "1432.00",
-            "oldPrice": "1646.00",
+            "price": 1432.00,
+            "oldPrice": 1646.00,
             "isDefault": false
         },
         {
             "id": "v3",
             "weight": "1000",
             "article": "01308",
-            "price": "2064.00",
-            "oldPrice": "2592.00",
+            "price": 2064.00,
+            "oldPrice": 2592.00,
             "isDefault": false
         },
         {
             "id": "v4",
             "weight": "5000",
             "article": "01309",
-            "price": "6320.00",
-            "oldPrice": "8710.00",
+            "price": 6320.00,
+            "oldPrice": 8710.00,
             "isDefault": false
         }
     ]
