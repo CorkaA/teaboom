@@ -138,9 +138,116 @@ button {
 
 .options-btn:hover {
     border: 1px solid var(--color-green-light);
+    cursor: pointer;
 }
 
 .options-btn.active {
     background: var(--color-green-light);
     color: var(--color-card-bg);
+}
+
+.product-card_meta {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--color-text-secondary);
+    margin-bottom: 46px;
+}
+
+.product-card_price-block {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.product-card_price-block .old-price {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--color-text-secondary);
+    text-decoration: line-through;
+} 
+
+.product-card_price-block .price {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--color-text-main);
+} 
+
+.offer-block {
+    display: flex;
+    align-items: anchor-center;
+    gap: 30px;
+}
+
+.btn-add-to-cart {
+    padding: 19px;
+    border-radius: var(--radius-big-btn);
+    background: var(--color-green-dark);
+    color: var(--color-card-bg);
+    max-width: 270px;
+    height: 58px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.btn-add-to-cart:hover {
+    background: var(--color-green-light);
+}
+
+.note {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 135%;
+    letter-spacing: 0;
+    color: var(--color-text-secondary);
+    max-width: 120px;
+}
+
+.product-description {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.description-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--color-text-main);
+    margin-bottom: 10px;
+}
+
+.description-text {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: var(--color-text-secondary);
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: inside;
+}
+
+.benefits-list li {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: var(--color-text-secondary);
 }
